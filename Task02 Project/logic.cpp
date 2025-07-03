@@ -58,4 +58,22 @@ int count_even_elements_down_main_diagonale(int matrix[SIZE][SIZE], int size){
 	return count;
 }
 
+int count_odd_elements_up_additional_diagonale(int matrix[SIZE][SIZE], int size) {
+	foolproof(matrix, size);
+
+	int count = 0;
+
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = 0; j < size - i - 1; j++)
+		{
+			if (matrix[i][j] % 2 != 0) {
+				count++;
+			}
+		}
+	}
+
+	return count;
+}
+
 
