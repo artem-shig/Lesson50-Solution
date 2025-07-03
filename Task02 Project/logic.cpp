@@ -111,4 +111,36 @@ int count_negativee_elements_down_additional_diagonale(int matrix[SIZE][SIZE], i
 
 	return count;
 }
+//Level D
+bool find_zero_element_down_main_diagonale(int matrix[SIZE][SIZE], int size) {
+	foolproof(matrix, size);
+
+	for (int i = 1; i < size; i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			if (matrix[i][j] == 0) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+bool find_zero_element_up_additional_diagonale(int matrix[SIZE][SIZE], int size) {
+	foolproof(matrix, size);
+
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = 0; j < size - i - 1; j++)
+		{
+			if (matrix[i][j] == 0) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
 

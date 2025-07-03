@@ -8,3 +8,6 @@ int count_odd_elements_up_additional_diagonale(int matrix[SIZE][SIZE], int size)
 //Level C
 int count_positive_elements_up_main_diagonale(int matrix[SIZE][SIZE], int size);
 int count_negativee_elements_down_additional_diagonale(int matrix[SIZE][SIZE], int size);
+//Level D
+bool find_zero_element_down_main_diagonale(int matrix[SIZE][SIZE], int size);
+bool find_zero_element_up_additional_diagonale(int matrix[SIZE][SIZE], int size);
